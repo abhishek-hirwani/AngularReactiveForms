@@ -1,0 +1,40 @@
+<h3 class="text-info">KOnverge.Ai Registration Page</h3>
+
+<h5>{{registrationForm.value | json }}</h5>
+<form [formGroup]="registrationForm">
+  <div class="form-group">
+    <label>Username</label>
+    <input formControlName="username" type="name" class="form-control"/>
+  </div>
+
+  <div class="form-group">
+    <label>Password</label>
+    <input formControlName="password" type=password class="form-control"/>
+  </div>
+
+  <div class="form-group">
+    <label>Confirm Password</label>
+    <input formControlName="confirompassword" type=password class="form-control"/>
+  </div>
+<div formGroupName="address">
+
+  <div  class="form-group">
+    <label>City</label>
+    <input formControlName="city" class="form-control"/>
+  </div>
+
+  <div class="form-group">
+    <label>Postal Code</label>
+    <input formControlName="postalcode" class="form-control"/>
+  </div>
+
+  <div class="form-group">
+    <label>State</label>
+    <input formControlName="state" class="form-control"/>
+  </div>
+</div>
+
+  <button class="btn btn-success mt-3" type="submit">Register</button><br>
+  <button class="btn btn-danger mt-3" type="submit" >Load API Data</button>
+
+</form>
